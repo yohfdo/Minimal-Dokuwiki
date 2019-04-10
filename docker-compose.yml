@@ -2,11 +2,11 @@ version: '2'
 
 services:
   dokuwiki:
-    image: ianculovici/minimal-dokuwiki:latest
+    image: yo-dokuwiki
     container_name: "mywiki"
-#    volumes:
-#        - ./dokuwiki-data:/dokuwiki
-#    restart: always
+    volumes:
+       - ./dokuwiki-data:/dokuwiki
+    restart: always
     ports:
         - "7080:80"
 
