@@ -2,8 +2,8 @@ FROM alpine:latest
 
 LABEL maintainer ianculovici 
 
-ENV TIMEZONE		America/Chicago
-ENV DW_VERSION 		2018-04-22a
+ENV TIMEZONE		Australia/Sydney
+ENV DW_VERSION 		2018-04-22b
 
 RUN apk --update add nginx php7 php7-fpm php7-opcache php7-session php7-json php7-pdo_sqlite php7-openssl curl supervisor && \
 	apk add --update tzdata && \
